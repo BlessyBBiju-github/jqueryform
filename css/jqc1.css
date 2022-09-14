@@ -1,0 +1,29 @@
+.divbox{
+	margin: auto;
+	width: 50%;
+}
+#firstForm {
+    width:100%;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    
+}
+
+form label {
+  display: inline-block;
+  width: 100px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  margin-left: 5px;
+}
+
+label.error {
+  display: inline;
+}
