@@ -1,11 +1,11 @@
 $(document).ready(function() {
- $('#firstForm').submit(function(e) {
+ $('#form').submit(function(e) {
     e.preventDefault();
     var firstName = $('#firstName').val();
     var lastName = $('#lastName').val();
     var email = $('#email').val();
     var password = $('#password').val();
-    var gender= $('#gender').val();
+    var selectradio= $("input[name='sex']:checked").val();
     var address= $('#address').val();
     var num=$('#num').val();
     $(".error").remove();
@@ -28,7 +28,8 @@ $(document).ready(function() {
     if (password.length < 5) {
       $('#password').after('<span class="error">Password must be at least 5 characters long</span>');
     }
-      if (gender.length < 2) {
+     if (selectradio) {
+     }else{
       $('#gender').after('<span class="error">This field is required</span>');
 }
       if (address.length < 20) {
